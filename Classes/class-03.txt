@@ -1,0 +1,11 @@
+use cadastro;
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+(default, 'Gustavo', '1979-02-01', 'M', '67', '1.78', 'Portugal'),
+(default, 'Lucy', '1939-08-08', 'F', '60', '1.52', 'Suécia'),
+(default, 'Milton', '1994-05-08', 'M', '88', '1.62', 'Irlanda'),
+(default, 'Roberto', '1999-05-06', 'M', '60', '1.92', 'Brasil');
+
+select * from pessoas;
