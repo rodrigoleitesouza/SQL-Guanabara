@@ -1,4 +1,4 @@
-# SQL-Guanabara 📑
+# SQL-Guanabara 🗃️
 
 O presente repositório refere-se aos meus estudos durante meus aprendizados em SQL, utilizando o MySQL e assistindo às aulas do Curso Em Vídeo do professor Gustavo Guanabara.
 
