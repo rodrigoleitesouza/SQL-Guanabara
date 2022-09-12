@@ -1,0 +1,23 @@
+use cadastro;
+
+create table gafanhotos_assiste_cursos (
+	id int not null auto_increment,
+    date date,
+    idgafanhoto int,
+    idcurso int,
+    primary key (id),
+    foreign key (idgafanhoto) references gafanhotos(id),
+    foreign key (idcursgafanhotos_assiste_cursoso) references cursos(idcurso)
+) default charset = utf8;
+
+insert into gafanhotos_assiste_cursos values
+(default, '2014-01-01', '1', '2');
+
+select * from gafanhotos_assiste_cursos;
+
+select g.nome, c.nome from gafanhotos as g
+join gafanhotos_assiste_cursos as a
+on g.id = a.idgafanhoto
+join cursos as c
+on c.idcurso = a.idcurso
+order by g.nome;
