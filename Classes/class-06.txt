@@ -1,0 +1,32 @@
+use cadastro;
+
+select * from gafanhotos;
+
+select * from cursos
+order by nome desc;
+
+select nome, carga, ano from cursos
+order by nome;
+
+select ano, nome, carga from cursos
+order by ano, carga;
+
+select ano, nome, carga from cursos
+where ano = '2016'
+order by nome;
+
+select ano, nome, descricao from cursos
+where ano <= '2015'
+order by ano, nome;
+
+select ano, nome from cursos
+where ano between '2014' and '2016'
+order by ano, nome;
+
+select ano, nome from cursos
+where ano in (2014, 2016)
+order by ano, nome;
+
+select * from cursos
+where carga > 35 and totaulas < 30
+order by nome;
